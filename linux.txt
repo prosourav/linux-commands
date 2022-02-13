@@ -1,0 +1,76 @@
+All Necessary Commands for Linux
+
+
+
+cp,mv,rm
+
+*File/Folder
+.file=>hidden file/folder => mkdir .folderone (creating hidden file)
+rm -rf foldername
+mkdir -p folderone/{a,b,c}
+cvf = create verbrose forcefully
+xvf = extract verbrose forcefully
+
+ln -s =(soft link= shortcut)
+ln -s sourav softfile
+ln file1 file1backup(automatic get updated,sync with original file,better than copy) 
+
+tar= its get used to make a single file of multiple folder
+to make tar file --> tar -cvf filex.tar folderName(folder name which you want make tar from)
+tp compress that tar file = gzip filex.tar
+
+o/p=filex.tar.gz
+
+to unzip now --> gunzip filex.tar.gz-->xvf filex.tar
+
+to download = wget <url>
+yum install
+ 
+to install deb file
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_i386.deb
+sudo dpkg -i google-chrome-stable_current_i386.deb
+
+sudo apt-get install tree
+
+
+
+*user permission
+
+to see permission ls -l|ls -al
+
+file/directory/link owner|group|others symobolik-link owner group sizeof-file/folder date time name path
+drwxrwxrwx 2 root root 6 july 12 0.9:55 "directoryName" 'path'
+-rwxrwxrwx 1 root root 1 july 12 0.9:55 "fileName" 'path'
+lrwxrwxrwx 1 root root 1 july 12 0.9:55 "fileName" 'path'
+
+file has 1=symolik and directory=2 and file size 1 folder 6 by default.
+
+chmod for change mode of change the mode of access permisson
+
+rwx = r=4 w=2 x=1 to change (full permission for everyone) chmod 777 file/folder name or remove 
+write permission from user chmod 775 or remove read and write permission from group chmod 747.
+(777=root/group/user all having full access). chmod 700 = group and user doesn't have any permission.
+to change owner--> chown sourav filename
+
+to add user or group = useradd sourav / groupadd newgroup
+to check all user =  cat /etc/passwd
+to check all group = cat /etc/group
+to add a user to a group = gpasswd -a 'username' 'groupname'
+to add multiple user to a group = gpasswd -M "a,b,c" groupname
+
+to find something find /home/sourav -name filename
+
+*network
+hostname
+hostname -i
+About os=  cat /etc/os-release 
+whoami
+which
+tree
+grep
+history
+stat filename
+
+to change time stamp of a file => touch 'filename'
+access time = touch -a 'filename'
+modified time = touch -m 'filename'
