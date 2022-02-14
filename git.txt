@@ -1,0 +1,53 @@
+Important Git Commands
+
+//this is for local workspace
+
+git config user.name "sourav.saha"
+git config user.email "prosourav49@gmail.com"
+
+for global (recommended)
+git config --global user.name "sourav.saha"
+git config --global user.email "prosourav49@gmail.com"
+git config user.name to check name
+git config list
+
+
+git status
+
+to staged a file = git add .
+now you have just staged and write some new line of code but got some buggy code so you want to get back code before staged on a specific file (suppose abc.txt)
+ git restore abc.txt
+ 
+ to unstage a file git rm --cached file.txt
+ to unstage all file git reset
+ git diff to see the differene between staged file and modified file
+ to see commit history => git log /git log --oneline
+ 
+***uncommit***
+to undo recent commit git reset --soft HEAD^
+to undo recent commit and unstage it git reset HEAD^ 
+to back in previous commit git reset --hard HEAD^
+
+to show detail of specific commit => git show commit_id
+git show HEAD-Number(number to show previous commit details)
+
+
+git remote -v/ git remote shows the connected remote with url
+git remote add origin <url>
+
+to delete a branch=> first checkout to other branch then git branch -d branchName
+to check out to new branch => git checkout -b "newbranch"
+to merge locally and push=>
+crate a new branch and commit and move to main then merge then pull from remote and then push
+
+git conflict local
+
+to see the conflict => git status
+Head means current commit 
+change the code and commit  ref:#21 anisul islam
+
+git stash for modefied file
+git stash list
+git stash pop stash@{number}
+git stash clear
+git stash
