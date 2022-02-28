@@ -28,6 +28,12 @@ to undo recent commit git reset --soft HEAD^
 to undo recent commit and unstage it git reset HEAD^ 
 to back in previous commit git reset --hard HEAD^
 
+to download branch
+git checkout to main
+git fetch origin
+git checkout -t origin/remote-branch
+
+
 to show detail of specific commit => git show commit_id
 git show HEAD-Number(number to show previous commit details)
 
