@@ -32,6 +32,11 @@ to download branch
 git checkout to main
 git fetch origin
 git checkout -t origin/remote-branch
+To see remote branches, run this command:
+git branch -r
+To see all local and remote branches, run this command:
+git branch -a
+ref:https://www.nobledesktop.com/learn/git/git-branches.
 
 
 to show detail of specific commit => git show commit_id
