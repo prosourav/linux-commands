@@ -1,6 +1,6 @@
 All Necessary Commands for Linux
 
-
+open terminal cntrl + alt + t
 
 cp,mv,rm
 
