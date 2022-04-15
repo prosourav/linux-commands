@@ -70,7 +70,12 @@ tree
 grep
 history
 stat filename
+nano => ctrl + x =>Y => enter.
 
+to open terminal=> alt  + cntrl + t
+to close termnal=> cntrl + d
+to clear terminal => cntrl + l.
 to change time stamp of a file => touch 'filename'
 access time = touch -a 'filename'
 modified time = touch -m 'filename'
+
