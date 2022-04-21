@@ -62,3 +62,4 @@ git stash list
 git stash pop stash@{number}
 git stash clear
 git stash
+git stash --include-untracked
