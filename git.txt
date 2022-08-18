@@ -1,3 +1,5 @@
+//undo recent pull
+git reset --hard HEAD@{1}
 
 
 Important Git Commands
