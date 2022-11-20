@@ -71,3 +71,8 @@ git stash clear
 git stash
 git stash --include-untracked
 
+to undo recent pull
+git llog
+copy the last (commitId)
+git reset --hard commitId
+
