@@ -18,6 +18,7 @@ git config list
 
 git status
 
+undo unadded changes git restore .
 to staged a file = git add .
 now you have just staged and write some new line of code but got some buggy code so you want to get back code before staged on a specific file (suppose abc.txt)
  git restore abc.txt(it will discard all the changed code) and unstage it.
