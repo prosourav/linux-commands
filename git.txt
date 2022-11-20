@@ -76,6 +76,6 @@ git reset --hard HEAD^
 
 
 Remove any commit using this
-go to specific commit 92740e6f5dc9f9e2393d795604c46e8edc9a8ee8
-but it will not remove changes, changes will be in un unstage area
+go to specific commit git reset 92740e6f5dc9f9e2393d795604c46e8edc9a8ee8
+but it will not remove changes, changes will be in unstage area
 if want to remove them use git resote .
