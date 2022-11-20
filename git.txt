@@ -71,7 +71,6 @@ git stash clear
 git stash
 git stash --include-untracked
 
-(if conflict)
 to undo recent pull
-git merge --abort / git reset --hard HEAD
+git reset --hard HEAD^
 
