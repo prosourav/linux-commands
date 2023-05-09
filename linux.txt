@@ -8,6 +8,8 @@ cp,mv,rm
 .file=>hidden file/folder => mkdir .folderone (creating hidden file)
 rm -rf foldername
 mkdir -p folderone/{a,b,c}
+mkdir FolderOne && touch FolderOne/example.txt FolderOne/test.txt
+mkdir -p folder/folder2/folder3
 cvf = create verbrose forcefully
 xvf = extract verbrose forcefully
 
