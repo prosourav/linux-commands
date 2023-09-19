@@ -72,6 +72,7 @@ tree
 grep
 history
 stat filename
+nautilus ./ (to open folder/file in GUI)
 nano => ctrl + x =>Y => enter.
 
 to open terminal=> alt  + cntrl + t
