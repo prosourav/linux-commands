@@ -87,5 +87,6 @@ vi command
 vi filename.*
 enter i
 after complete editing
-escape wq.
+escape
+ :wq
 

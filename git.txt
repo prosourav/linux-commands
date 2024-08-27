@@ -79,3 +79,45 @@ Remove any commit using this
 go to specific commit git reset 92740e6f5dc9f9e2393d795604c46e8edc9a8ee8
 but it will not remove changes, changes will be in unstage area
 if want to remove them use git resote .
+
+// kunal kushwaha
+
+Unstage a git file
+1. If no commit is done and you want to unstage then use - 'git rm --cached filename.txt' 
+2. If first commit has complete then git restore --staged filename.txt
+
+git restore . (brings your file to last staged position)
+
+if your file is not stagged stash will not work
+if you resently added a file and then bring some changes and now want to remove the new changes git restore .
+
+if you deleted a staged file and wants to bring back - git restore .
+
+
+if you have deleted a file and by mistake and commited then 
+go to your previous commit and copy the hash and then use - 'git reset <hash>' and then use git stash/git restore . you will bring back
+your previous file.
+
+here when git reset happen it brings git to a position where deleted operation happened but not added so we use git restore .
+to retrive file where we reach at the last commit position.
+
+git remote -V
+
+if some commit is on remote branch and you want to remove one commit then do it on local
+ while complete the commit in local and push again use git push origin <branch> -f
+
+while do opensource
+1.fork
+2.clone on local
+3.git remote add upstream <origin>
+4. create a new branch
+5.push to own repo
+
+if you want to take multiple commit with one single commit 
+1. enter commit id which you want to be remain fixed and after that all commit should be wirth a single commit
+git rebase -i <commit id>
+
+then add message
+
+Squash - s
+if you make commit squash it will go with the commit after it but it should be pick commit
