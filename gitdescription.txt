@@ -1,0 +1,71 @@
+git config user.name "sourav.saha": Sets your Git username for local commits.
+git config user.email "prosourav49@gmail.com": Sets your Git email for local commits.
+git config --global user.name "sourav.saha" (recommended): Sets your Git username globally for all repositories.
+git config --global user.email "prosourav49@gmail.com" (recommended): Sets your Git email globally for all repositories.
+git config user.name: Shows your currently configured Git username.
+git config list: Lists all your Git configurations.
+Checking Status:
+
+git status: Shows the current status of your Git repository, including unstaged changes, staged changes, and untracked files.
+Undoing Changes:
+
+git restore .: Discards all unstaged changes in the working directory.
+git add .: Stages all modified and deleted files in the working directory.
+git restore abc.txt: Discards all changes made to the specific file abc.txt. (This won't affect the staging status.)
+git reset: Unstages all changes (opposite of git add).
+Unstaging Files:
+
+git rm --cached file.txt: Unstages a specific file from the staging area.
+git reset: Unstages all staged files (same as above).
+Comparing Changes:
+
+git diff: Shows the difference between staged files and their modified versions.
+Viewing Commit History:
+
+git log: Shows the commit history of your repository.
+git log --oneline: Shows the commit history in a single line format.
+Undoing Commits:
+
+git reset --soft HEAD^: Undoes the last commit but keeps the changes staged.
+git reset HEAD^: Undoes the last commit and unstages the changes.
+git reset --hard HEAD^: Undoes the last commit and discards all changes (including staged changes).
+Downloading Branches:
+
+git checkout main: Switches to the "main" branch (or "master" if you haven't renamed it).
+git fetch origin: Downloads changes from the remote repository named "origin".
+git checkout -t origin/remote-branch: Switches to the remote branch named "remote-branch".
+git branch -r: Shows a list of remote branches.
+git branch -a: Shows a list of all branches (local and remote).
+Viewing Commit Details:
+
+git show commit_id: Shows the details of a specific commit by its ID.
+git show HEAD-Number (Number to show previous commit details): Shows the details of a commit a certain number of positions back from the HEAD (latest commit).
+Remotes:
+
+git remote -v: Shows information about configured remotes (remote repositories).
+git remote add origin <url>: Adds a new remote named "origin" with the specified URL.
+Branch Management:
+
+git branch -d branchName (delete a branch): Deletes a branch named "branchName" (after switching to a different branch).
+git checkout -b "newbranch": Creates a new branch named "newbranch" and switches to it.
+Merging and Pushing:
+
+(This section describes a typical workflow for creating a new branch, committing changes, merging it into the main branch, and pushing changes to the remote repository.)
+Conflicts:
+
+git status: Shows any conflicts that arise during a merge.
+HEAD: Refers to the current commit in your local repository.
+Stashing Changes:
+
+git stash: Temporarily saves modified files for later use.
+git stash list: Shows a list of all stashes.
+git stash pop stash@{number}: Applies the specified stash (by number) to your working directory.
+git stash clear: Deletes the most recent stash.
+git stash: Creates a new stash with the current modified files (same as above).
+git stash --include-untracked: Includes untracked files in the stash.
+Reverting Pulls:
+
+git reset --hard HEAD^ (caution!): Reverts the most recent pull, discarding all changes introduced by it. (Use with caution as this rewrites history!)
+Removing Commits:
+
+`git reset 92740e6f5dc9f9e2393
