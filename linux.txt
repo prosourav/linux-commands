@@ -82,3 +82,10 @@ to change time stamp of a file => touch 'filename'
 access time = touch -a 'filename'
 modified time = touch -m 'filename'
 
+vi command 
+
+vi filename.*
+enter i
+after complete editing
+escape wq.
+
