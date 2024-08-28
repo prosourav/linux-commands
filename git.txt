@@ -121,3 +121,7 @@ then add message
 
 Squash - s
 if you make commit squash it will go with the commit after it but it should be pick commit
+
+Cherry-pick
+if want to bring a specific commit of another branch to current branch
+git cherry-pick <commit hash>
