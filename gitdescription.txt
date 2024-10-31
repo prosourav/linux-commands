@@ -69,3 +69,11 @@ git reset --hard HEAD^ (caution!): Reverts the most recent pull, discarding all 
 Removing Commits:
 
 `git reset 92740e6f5dc9f9e2393
+
+remove untrack file
+git clean -f
+
+
+
+# See what would be deleted first (dry run)
+git clean -n
