@@ -78,6 +78,18 @@ git clean -f
 # See what would be deleted first (dry run)
 git clean -n
 
- Reset to Remote Branch
+Reset to Remote Branch
 git fetch --all
 git reset --hard origin/main 
+
+History/activity
+git reflog
+
+rebase for gitflow
+git pull --rebase origin <branch name>
+if gets conflicts resolve and add
+git add <resolved-file>
+git rebase --continue
+
+to cancel
+git rebase --abort
