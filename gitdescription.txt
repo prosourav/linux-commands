@@ -3,7 +3,7 @@ git config user.email "prosourav49@gmail.com": Sets your Git email for local com
 git config --global user.name "sourav.saha" (recommended): Sets your Git username globally for all repositories.
 git config --global user.email "prosourav49@gmail.com" (recommended): Sets your Git email globally for all repositories.
 git config user.name: Shows your currently configured Git username.
-git config list: Lists all your Git configurations.
+git config --list: Lists all your Git configurations.
 Checking Status:
 
 git status: Shows the current status of your Git repository, including unstaged changes, staged changes, and untracked files.
@@ -77,3 +77,7 @@ git clean -f
 
 # See what would be deleted first (dry run)
 git clean -n
+
+ Reset to Remote Branch
+git fetch --all
+git reset --hard origin/main 
